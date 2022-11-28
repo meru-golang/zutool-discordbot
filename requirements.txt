@@ -1,1 +1,1 @@
-interactions
+discord-py-interactions
