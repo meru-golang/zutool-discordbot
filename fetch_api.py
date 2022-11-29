@@ -46,3 +46,15 @@ def get_pressure_status(city_code, date):
     for i in range(24):
         pressure_info = pressure_info + f"{i}時 : {date_weather_status[i]['pressure']} hPa, {pressure_level[int(date_weather_status[i]['pressure_level'])]}\n"
     return pressure_info
+
+def check_date(date):
+    dating = ""
+    if date == 'today':
+        dating = "今日"
+        return dating
+    elif date == 'tommorow':
+        dating = "明日"
+        return dating
+    else:
+        dating = "明後日"
+        return dating
